@@ -1,8 +1,8 @@
 def domain_name(url)
-  domain_name = url.split(".")
-  if domain_name.count > 2
-    domain_name[1]
+  domain = url.split(".")
+  if domain.count > 2
+    domain[1]
   else 
-    domain_name[0].split("/")[2]    
+    domain[0].split("/")[2]    
   end
 end
